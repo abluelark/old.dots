@@ -1,0 +1,56 @@
+! Fonts
+URxvt.font:xft:ProfontIIx:pixelsize=12:antialias=True,xft:JackeyFont:pixelsize=12:antialias=True
+URxvt.boldFont:
+XTerm.font:xft:ProfontIIx:pixelsize=12:antialias=True,xft:JackeyFont:pixelsize=12:antialias=True
+XTerm.boldFont:
+
+! General
+*.scrollBar: false
+*.saveLines: 8192
+
+*.cursorUnderline: true
+*.cursorBlink: true
+*.dynamicColors:on
+*.letterSpace: 0
+
+Xft.autohint: false
+Xft.dpi: 96
+Xft.hintstyle: hintnone
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+! Real Transparency
+!urxvt*depth: 32
+!urxvt*background: rgba:0000/0000/0200/c800
+
+! Fake Transparency 
+! shading - 0 being opaque, 100 being translucent
+ urxvt*transparent: true
+ urxvt*shading: 20
+
+! Separate settings for emacs
+emacs.internalBorder: 0
+
+! Rofi
+rofi.opacity: 100
+rofi.width: 40
+rofi.lines: 3
+rofi.font: ProfontIIx 8
+rofi.padding: 50
+rofi.bw: 2
+rofi.terminal: urxvt
+rofi.disable-history: true
+rofi.color-window: #2e2e2e, #71899d
+rofi.color-normal: #2e2e2e, #eeeeee, #2e2e2e, #71899d, #2e2e2e
+rofi.color-active: #2e2e2e, #eeeeee, #2e2e2e, #8da7be, #2e2e2e
+rofi.color-urgent: #2e2e2e, #eeeeee, #2e2e2e, #a06e6e, #2e2e2e
+
+! Clickable Links
+*perl-ext-common:	 default,matcher,clipboard
+*keysym.Shift-Control-V: perl:clipboard:paste
+*url-launcher:		 /usr/bin/vivaldi-stable
+*matcher.button:	 1
+*url-select.underline:	 true
+*.matcher.rend.0:        Uline Bold fg4
+
+
