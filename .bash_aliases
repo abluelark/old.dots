@@ -4,7 +4,8 @@
 alias c='clear'
 alias h='history'
 alias e='exit'
-alias upgrade='sudo pacman -Syyuu'
+alias aptin='sudo apt-get install'
+alias upgrade='sudo apt-get update && sudo apt upgrade && sudo apt-get autoremove'
 # alias src='source ~/.bashrc'
 alias src='source ~/.zshrc'
 alias shutdown='poweroff'
@@ -20,6 +21,11 @@ alias unstow="stow -D"
 alias x="startx"
 alias fdisk="sudo fdisk"
 alias pt="sudo powertop"
+
+# Research
+alias abacus="ssh ddb19@abacus.cs.uwf.edu"
+alias feral="ssh loman@iapetus.feralhosting.com"
+alias ferf="sftp loman@iapetus.feralhosting.com"
 
 # Applications/Tools
 alias fsch='feh -. --zoom fill -g 1280x720'
